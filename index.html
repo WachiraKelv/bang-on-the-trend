@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bang on the Trend | Clothes & Shoes</title>
+  <meta name="description" content="Bang on the Trend - the latest fashion in clothes and shoes. Shop trendy outfits and sneakers and order easily on WhatsApp." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ============ HEADER / NAVIGATION ============ -->
+  <header class="header">
+    <div class="container header-inner">
+      <a href="#home" class="logo">BANG <span>on the</span> TREND</a>
+
+      <nav class="nav" id="nav">
+        <a href="#home">Home</a>
+        <a href="#shop">Shop</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="cart-btn" id="openCart" aria-label="Open cart">
+          🛒 <span class="cart-count" id="cartCount">0</span>
+        </button>
+        <button class="menu-btn" id="menuBtn" aria-label="Toggle menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="home">
+    <div class="container hero-inner">
+      <p class="eyebrow">New season · New drops</p>
+      <h1>Stay <span class="highlight">Bang</span> on the Trend.</h1>
+      <p class="hero-text">Fresh clothes and shoes for people who love to stand out. Pick your style, add to cart and order in minutes.</p>
+      <div class="hero-buttons">
+        <a href="#shop" class="btn btn-primary">Shop Now</a>
+        <a href="#contact" class="btn btn-outline">Contact Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FEATURES STRIP ============ -->
+  <section class="features">
+    <div class="container features-grid">
+      <div><span>🚚</span><h4>Fast Delivery</h4><p>Quick delivery to your location</p></div>
+      <div><span>💳</span><h4>Easy Payment</h4><p>Pay with M-Pesa or on delivery</p></div>
+      <div><span>🔄</span><h4>Easy Exchange</h4><p>Wrong size? We'll sort it out</p></div>
+      <div><span>✨</span><h4>Quality Picks</h4><p>Hand-picked trendy styles</p></div>
+    </div>
+  </section>
+
+  <!-- ============ SHOP ============ -->
+  <section class="section" id="shop">
+    <div class="container">
+      <h2 class="section-title">Shop the Collection</h2>
+      <p class="section-sub">Browse our latest clothes and shoes.</p>
+
+      <div class="toolbar">
+        <div class="filters" id="filters">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="clothes">Clothes</button>
+          <button class="filter-btn" data-filter="shoes">Shoes</button>
+        </div>
+        <div class="tools-right">
+          <input type="search" id="searchInput" placeholder="Search products..." />
+          <select id="sortSelect">
+            <option value="default">Sort by</option>
+            <option value="low">Price: Low to High</option>
+            <option value="high">Price: High to Low</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product-grid" id="productGrid">
+        <!-- Products are added here by script.js -->
+      </div>
+      <p class="no-results" id="noResults" hidden>No products found. Try another search.</p>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="section about" id="about">
+    <div class="container about-inner">
+      <div class="about-text">
+        <h2 class="section-title left">About Bang on the Trend</h2>
+        <p>Bang on the Trend is a fashion store for clothes and shoes that keep you looking sharp and feeling confident. We bring you the latest styles at prices that make sense.</p>
+        <p>From everyday streetwear to outfits for special occasions, and from fresh sneakers to classic shoes, we've got something for every style and every budget.</p>
+        <ul class="about-list">
+          <li>✔ Latest trends, always updated</li>
+          <li>✔ Affordable prices</li>
+          <li>✔ Friendly, reliable service</li>
+        </ul>
+      </div>
+      <div class="about-box">
+        <h3>Why customers love us</h3>
+        <div class="stats">
+          <div><strong>500+</strong><span>Happy customers</span></div>
+          <div><strong>100+</strong><span>Styles in stock</span></div>
+          <div><strong>24/7</strong><span>WhatsApp orders</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TESTIMONIALS ============ -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">What Our Customers Say</h2>
+      <div class="testimonials">
+        <blockquote>"Got my sneakers in two days and they fit perfectly. Will definitely order again!"<cite>— Brian K.</cite></blockquote>
+        <blockquote>"The dress was exactly like the photos. Great quality for the price."<cite>— Faith W.</cite></blockquote>
+        <blockquote>"Easy ordering on WhatsApp, super friendly service. Highly recommend."<cite>— Kevin O.</cite></blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="section contact" id="contact">
+    <div class="container contact-inner">
+      <div class="contact-info">
+        <h2 class="section-title left">Get in Touch</h2>
+        <p>Questions about sizes, prices or delivery? Send us a message and we'll reply quickly.</p>
+        <p>📍 <span id="infoLocation">Thika Town, General Kago Road (OPPOSITE THIKA TEC INSTITUTE)</span></p>
+        <p>📞 <span id="infoPhone">+254 740 709207</span></p>
+        <p>✉️ <span id="infoEmail">hello@bangonthetrend.com</span></p>
+        <p>🕒 Mon – Sat: 9:00 AM – 7:00 PM</p>
+      </div>
+
+      <form class="contact-form" id="contactForm">
+        <label for="cName">Your name</label>
+        <input type="text" id="cName" required placeholder="Jane Doe" />
+
+        <label for="cPhone">Phone number</label>
+        <input type="tel" id="cPhone" required placeholder="07XX XXX XXX" />
+
+        <label for="cMessage">Message</label>
+        <textarea id="cMessage" rows="4" required placeholder="How can we help?"></textarea>
+
+        <button type="submit" class="btn btn-primary">Send via WhatsApp</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <a href="#home" class="logo light">BANG <span>on the</span> TREND</a>
+        <p>Clothes &amp; shoes that keep you on trend.</p>
+      </div>
+      <div class="socials">
+        <a href="#" aria-label="Instagram">Instagram</a>
+        <a href="#" aria-label="Facebook">Facebook</a>
+        <a href="#" aria-label="TikTok">TikTok</a>
+      </div>
+    </div>
+    <p class="copyright">© <span id="year"></span> Bang on the Trend. All rights reserved.</p>
+  </footer>
+
+  <!-- ============ CART DRAWER ============ -->
+  <div class="overlay" id="overlay"></div>
+  <aside class="cart" id="cart" aria-label="Shopping cart">
+    <div class="cart-header">
+      <h3>Your Cart</h3>
+      <button id="closeCart" aria-label="Close cart">✕</button>
+    </div>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="cart-footer">
+      <div class="cart-total"><span>Total</span><strong id="cartTotal">KES 0</strong></div>
+      <button class="btn btn-primary full" id="checkoutBtn">+254 740 709207</button>
+      <button class="btn btn-ghost full" id="clearCart">Clear cart</button>
+    </div>
+  </aside>
+
+  <!-- Small popup message -->
+  <div class="toast" id="toast"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
